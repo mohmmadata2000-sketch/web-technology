@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Guessing Game</title>
+    <title>Palestine Explorer: Midterm Challenge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
+<header>
+    <svg width="100" height="100" aria-label="Palestine logo">
+        <circle cx="50" cy="50" r="50"></circle>
+        <rect x="18" y="18" width="14" height="14"></rect>
+    </svg>
+<h1>Palestine</h1>
 
-    <h1>Guessing Number Game</h1>
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#intro">Introduction</a>
+        <a href="#cities">Governorates</a>
+        <a href="#contact">Contact</a>
+        <a href="#bottom">Bottom</a>
+    </nav>
+</header>
+<main>
 
-    <script src="script.js"></script>
+<section id="intro">
+    <h2>Welcome to Palestine</h2>
+    <p>Palestine is a beautiful land with a rich history.</p>
+    <a href="#cities">Explore Now</a>
+</section>
+<section id="cities">
+    <h2>Palestinian Governorates</h2>
+
+    <div class="cards">
+        <article>
+            <img src="https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20210512-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D9%85%D9%88%D9%82%D8%B9-%D9%85%D9%82%D8%AF%D8%B3-%D9%88%D9%85%D8%B5%D8%AF%D8%B1-%D8%AA%D9%88%D8%AA%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D9%8A%D9%86-%D9%85%D9%86%D8%B0-%D8%B9%D9%82%D9%88%D8%AF.jpg
+            " alt="Quds">
+            <h3>Quds</h3>
+            <p>A historic city.</p>
+        </article>
+        <article>
+            <img src="https://idsb.tmgrup.com.tr/2015/02/25/GenelBuyuk/1424823174231.jpg?v=1424823190" alt="Khaleel">
+            <h3>Khaleel</h3>
+            <p>A good city.</p>
+        </article>
+        <article>
+            <img src="https://en.wikipedia.org/wiki/Old_Jaffa#/media/File:Jaffa_old_city_2.jpg" alt="Yafa">
+            <h3>Yafa</h3>
+            <p>beateful city.</p>
+        </article>
+        <article>
+            <img src="https://www.nrc.no/cdn-cgi/image/width=1024,format=auto,fit=crop,height=768/globalassets/05_press/photos/palestine/img-20250728-wa0012.jpg" alt="Gaza">
+            <h3>Gaza</h3>
+            <p>A coastal city.</p>
+        </article>
+        <article>
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/2024-05-28t063916z-1345924223-rc2iz7age57x-rtrmadp-3-israel-palestinians-gaza-rafah.JPG?c=original&q=w_860,c_fill/f_avif" alt="Rafah">
+            <h3>Rafah</h3>
+            <p>A south city.</p>
+        </article>
+         <article>
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1973197924.jpg?c=original" alt="Khan Younus">
+            <h3>Khan Younus</h3>
+            <p>A better city.</p>
+        </article>
+ </div>
+</section>
+
+ </div>
+</section>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
 </body>
-
 </html>
+<label>Secret Word</label>
+        <input type="password" minlength="8"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).*" required>
+
+        <label>Message</label>
+        <textarea required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+
+<footer id="bottom">
+    <p>© 2026 | Student: Your Name</p>
+    <a href="#top">Go to Top</a>
+</footer>
