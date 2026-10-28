@@ -148,3 +148,32 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 
 }
+// World Clock using Fetch API
+
+fetch("https://worldtime.timezone.io/api/timezone/Asia/Riyadh")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Failed to get time");
+        }
+        return response.json();
+    })
+    .then(data => {
+        let timeDifference = data.unixtime * 1000 - Date.now();
+
+        function updateClock() {
+            let currentTime = new Date(Date.now() + timeDifference);
+
+            document.getElementById("time").textContent =
+                currentTime.toLocaleTimeString("en-US", {
+                    timeZone: "Asia/Riyadh"
+                });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    })
+    .catch(error => {
+        document.getElementById("time").textContent =
+            "Unable to load time";
+        console.log(error);
+    });
